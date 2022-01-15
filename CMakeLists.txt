@@ -93,6 +93,7 @@ if(CUDA_ENABLE)
         #nvrtc
         find_library(CUDA_NVRTC_LIB 
         NAMES
+            libnvrtc.so
             libnvrtc 
             nvrtc 
             nvrtc.lib
@@ -102,6 +103,7 @@ if(CUDA_ENABLE)
             ${CUDA_TOOLKIT_ROOT_DIR}
             /usr 
             /usr/local/cuda
+            /usr/local/cuda/lib64
         PATH_SUFFIXES
             lib64
             lib/x64
